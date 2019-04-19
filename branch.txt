@@ -1,0 +1,1026 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\bchir> node --version
+v11.14.0
+PS C:\Users\bchir> npm outdated -g
+Package             Current         Wanted  Latest  Location
+@angular/cli  8.0.0-beta.13  8.0.0-beta.15   7.3.8  global
+npm            6.9.1-next.0   6.9.1-next.0   6.9.0  global
+PS C:\Users\bchir> npm install @angular/cli@next
+
+> @angular/cli@8.0.0-beta.15 postinstall C:\Users\bchir\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. No
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Users\bchir\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Users\bchir\package.json'
+npm WARN bchir No description
+npm WARN bchir No repository field.
+npm WARN bchir No README data
+npm WARN bchir No license field.
+
++ @angular/cli@8.0.0-beta.15
+added 220 packages from 174 contributors and audited 2685 packages in 17.165s
+found 0 vulnerabilities
+
+PS C:\Users\bchir> npm outdated -g
+Package             Current         Wanted  Latest  Location
+@angular/cli  8.0.0-beta.13  8.0.0-beta.15   7.3.8  global
+npm            6.9.1-next.0   6.9.1-next.0   6.9.0  global
+PS C:\Users\bchir> npm install @angular/cli@8.0.0-beta.15
+
+> @angular/cli@8.0.0-beta.15 postinstall C:\Users\bchir\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. No
+npm WARN saveError ENOENT: no such file or directory, open 'C:\Users\bchir\package.json'
+npm WARN enoent ENOENT: no such file or directory, open 'C:\Users\bchir\package.json'
+npm WARN bchir No description
+npm WARN bchir No repository field.
+npm WARN bchir No README data
+npm WARN bchir No license field.
+
++ @angular/cli@8.0.0-beta.15
+updated 1 package and audited 7211 packages in 3.823s
+found 0 vulnerabilities
+
+PS C:\Users\bchir> npm outdated -g
+Package             Current         Wanted  Latest  Location
+@angular/cli  8.0.0-beta.13  8.0.0-beta.15   7.3.8  global
+npm            6.9.1-next.0   6.9.1-next.0   6.9.0  global
+PS C:\Users\bchir> npm install -g @angular/cli@next
+C:\Users\bchir\AppData\Roaming\npm\ng -> C:\Users\bchir\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@8.0.0-beta.15 postinstall C:\Users\bchir\AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. No
++ @angular/cli@8.0.0-beta.15
+updated 6 packages in 7.103s
+PS C:\Users\bchir> ls
+
+
+    Directory: C:\Users\bchir
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       12/18/2018   8:08 PM                .config
+d-----       12/19/2018   7:56 AM                .docker
+d-----        1/24/2019   8:50 PM                .node-gyp
+d-----        1/31/2019   7:18 PM                .ssh
+d-----       12/18/2018   7:25 PM                .WebStorm2018.3
+d-----        3/27/2019   8:19 PM                .WebStorm2019.1
+d-r---         3/2/2019  10:52 PM                3D Objects
+d-----       12/19/2018   7:58 AM                Apple
+d-r---         3/2/2019  10:52 PM                Contacts
+d-r---         4/3/2019   7:45 AM                Desktop
+d-r---         3/2/2019  10:52 PM                Documents
+d-r---        4/17/2019   7:35 PM                Downloads
+d-r---        4/17/2019   7:35 PM                Dropbox
+d-r---         3/2/2019  10:52 PM                Favorites
+d-r---         3/2/2019  10:52 PM                Links
+d-r---         3/2/2019  10:52 PM                Music
+d-----        4/17/2019   8:36 PM                node_modules
+dar--l        4/17/2019   7:35 PM                OneDrive
+d-r---        4/16/2019   7:13 AM                Pictures
+d-----        12/7/2018   1:02 PM                Roaming
+d-r---         3/2/2019  10:52 PM                Saved Games
+d-r---         3/2/2019  10:52 PM                Searches
+d-r---         3/2/2019  10:52 PM                Videos
+-a----        4/17/2019   8:37 PM             57 .angular-config.json
+-a----         4/6/2019  10:29 AM            133 .gitconfig
+-a----         1/7/2019  10:59 PM            881 .viminfo
+-a----        4/17/2019   8:35 PM          65784 package-lock.json
+
+
+PS C:\Users\bchir> del .\node_modules\
+
+Confirm
+The item at C:\Users\bchir\node_modules\ has children and the Recurse parameter was not
+specified. If you continue, all children will be removed with the item. Are you sure you
+ want to continue?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): A
+PS C:\Users\bchir> ls
+
+
+    Directory: C:\Users\bchir
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       12/18/2018   8:08 PM                .config
+d-----       12/19/2018   7:56 AM                .docker
+d-----        1/24/2019   8:50 PM                .node-gyp
+d-----        1/31/2019   7:18 PM                .ssh
+d-----       12/18/2018   7:25 PM                .WebStorm2018.3
+d-----        3/27/2019   8:19 PM                .WebStorm2019.1
+d-r---         3/2/2019  10:52 PM                3D Objects
+d-----       12/19/2018   7:58 AM                Apple
+d-r---         3/2/2019  10:52 PM                Contacts
+d-r---         4/3/2019   7:45 AM                Desktop
+d-r---         3/2/2019  10:52 PM                Documents
+d-r---        4/17/2019   7:35 PM                Downloads
+d-r---        4/17/2019   7:35 PM                Dropbox
+d-r---         3/2/2019  10:52 PM                Favorites
+d-r---         3/2/2019  10:52 PM                Links
+d-r---         3/2/2019  10:52 PM                Music
+dar--l        4/17/2019   7:35 PM                OneDrive
+d-r---        4/16/2019   7:13 AM                Pictures
+d-----        12/7/2018   1:02 PM                Roaming
+d-r---         3/2/2019  10:52 PM                Saved Games
+d-r---         3/2/2019  10:52 PM                Searches
+d-r---         3/2/2019  10:52 PM                Videos
+-a----        4/17/2019   8:37 PM             57 .angular-config.json
+-a----         4/6/2019  10:29 AM            133 .gitconfig
+-a----         1/7/2019  10:59 PM            881 .viminfo
+-a----        4/17/2019   8:35 PM          65784 package-lock.json
+
+
+PS C:\Users\bchir> ls
+
+
+    Directory: C:\Users\bchir
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       12/18/2018   8:08 PM                .config
+d-----       12/19/2018   7:56 AM                .docker
+d-----        1/24/2019   8:50 PM                .node-gyp
+d-----        1/31/2019   7:18 PM                .ssh
+d-----       12/18/2018   7:25 PM                .WebStorm2018.3
+d-----        3/27/2019   8:19 PM                .WebStorm2019.1
+d-r---         3/2/2019  10:52 PM                3D Objects
+d-----       12/19/2018   7:58 AM                Apple
+d-r---         3/2/2019  10:52 PM                Contacts
+d-r---         4/3/2019   7:45 AM                Desktop
+d-r---         3/2/2019  10:52 PM                Documents
+d-r---        4/17/2019   7:35 PM                Downloads
+d-r---        4/17/2019   7:35 PM                Dropbox
+d-r---         3/2/2019  10:52 PM                Favorites
+d-r---         3/2/2019  10:52 PM                Links
+d-r---         3/2/2019  10:52 PM                Music
+dar--l        4/17/2019   7:35 PM                OneDrive
+d-r---        4/16/2019   7:13 AM                Pictures
+d-----        12/7/2018   1:02 PM                Roaming
+d-r---         3/2/2019  10:52 PM                Saved Games
+d-r---         3/2/2019  10:52 PM                Searches
+d-r---         3/2/2019  10:52 PM                Videos
+-a----        4/17/2019   8:37 PM             57 .angular-config.json
+-a----         4/6/2019  10:29 AM            133 .gitconfig
+-a----         1/7/2019  10:59 PM            881 .viminfo
+-a----        4/17/2019   8:35 PM          65784 package-lock.json
+
+
+PS C:\Users\bchir> cd \dev
+PS C:\dev> ls
+
+
+    Directory: C:\dev
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        2/13/2019  11:58 PM                codenorman
+d-----       12/16/2018   6:53 PM                docker-angular
+d-----        3/26/2019   7:45 PM                fcc-d3
+d-----        3/30/2019   2:45 PM                geo-time
+d-----         3/9/2019   9:55 AM                github
+d-----       12/16/2018   6:53 PM                guru
+d-----         3/7/2019  10:55 AM                iteris
+d-----       12/16/2018   6:55 PM                linode
+d-----        2/15/2019  11:15 PM                training
+d-----       12/16/2018   6:37 PM                vagrant
+d-----       12/16/2018   6:39 PM                websites
+
+
+PS C:\dev> cd .\github\
+PS C:\dev\github> ls
+
+
+    Directory: C:\dev\github
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         3/9/2019   9:48 AM                0-remote
+d-----        2/15/2019  11:24 PM                angular-class
+d-----        2/14/2019  12:05 AM                angular-workshops
+d-----        2/13/2019  11:41 PM                AngularAir
+d-----         3/2/2019  12:03 PM                bchirgwin
+d-----        2/15/2019  10:45 PM                brandonroberts
+d-----        2/28/2019   6:23 PM                codenorman
+d-----        2/15/2019  11:35 PM                Elecash
+d-----        2/15/2019  10:47 PM                joeeames
+d-----        2/15/2019  11:23 PM                mgonto
+d-----        2/15/2019  10:43 PM                onehungrymind
+d-----        2/15/2019  10:33 PM                rangle
+d-----         3/3/2019   6:29 PM                tayllan
+d-----         3/3/2019   6:28 PM                thoughtram
+d-----        2/15/2019  10:49 PM                toddmotto
+
+
+PS C:\dev\github> cd .\bchirgwin\
+PS C:\dev\github\bchirgwin> ls
+
+
+    Directory: C:\dev\github\bchirgwin
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       12/16/2018   7:03 PM                bchirgwin.github.io
+d-----        3/14/2019   7:02 PM                codewars-jest-testing
+da----       12/16/2018   6:52 PM                d3-demos
+d-----        4/14/2019   8:45 PM                dev-book
+da----         4/6/2019  12:07 PM                diagrams
+d-----       12/16/2018   6:52 PM                docker
+da----         3/2/2019  11:08 AM                primeng
+
+
+PS C:\dev\github\bchirgwin> ng new demo1
+? Would you like to add Angular routing? No
+? Which stylesheet format would you like to use? CSS
+CREATE demo1/angular.json (3433 bytes)
+CREATE demo1/package.json (1374 bytes)
+CREATE demo1/README.md (1030 bytes)
+CREATE demo1/tsconfig.json (438 bytes)
+CREATE demo1/tslint.json (1985 bytes)
+CREATE demo1/.editorconfig (246 bytes)
+CREATE demo1/.gitignore (629 bytes)
+CREATE demo1/browserslist (528 bytes)
+CREATE demo1/karma.conf.js (1017 bytes)
+CREATE demo1/tsconfig.app.json (210 bytes)
+CREATE demo1/tsconfig.spec.json (270 bytes)
+CREATE demo1/src/favicon.ico (5430 bytes)
+CREATE demo1/src/index.html (292 bytes)
+CREATE demo1/src/main.ts (372 bytes)
+CREATE demo1/src/polyfills.ts (2838 bytes)
+CREATE demo1/src/styles.css (80 bytes)
+CREATE demo1/src/test.ts (642 bytes)
+CREATE demo1/src/assets/.gitkeep (0 bytes)
+CREATE demo1/src/environments/environment.prod.ts (51 bytes)
+CREATE demo1/src/environments/environment.ts (662 bytes)
+CREATE demo1/src/app/app.module.ts (314 bytes)
+CREATE demo1/src/app/app.component.html (1120 bytes)
+CREATE demo1/src/app/app.component.spec.ts (975 bytes)
+CREATE demo1/src/app/app.component.ts (209 bytes)
+CREATE demo1/src/app/app.component.css (0 bytes)
+CREATE demo1/e2e/protractor.conf.js (810 bytes)
+CREATE demo1/e2e/tsconfig.json (214 bytes)
+CREATE demo1/e2e/src/app.e2e-spec.ts (634 bytes)
+CREATE demo1/e2e/src/app.po.ts (251 bytes)
+
+> @angular/cli@8.0.0-beta.15 postinstall C:\dev\github\bchirgwin\demo1\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. No
+npm WARN codelyzer@5.0.0 requires a peer of @angular/compiler@>=2.3.1 <8.0.0 || >7.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.0 requires a peer of @angular/core@>=2.3.1 <8.0.0 || >7.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.8 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.8: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 1016 packages from 1031 contributors and audited 18967 packages in 56.799s
+found 0 vulnerabilities
+
+warning: LF will be replaced by CRLF in .editorconfig.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in .gitignore.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in README.md.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in angular.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in browserslist.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in e2e/protractor.conf.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in e2e/src/app.e2e-spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in e2e/src/app.po.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in e2e/tsconfig.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in karma.conf.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.spec.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.component.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/app/app.module.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/environments/environment.prod.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/environments/environment.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/index.html.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/main.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/polyfills.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/styles.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/test.ts.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.app.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tsconfig.spec.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in tslint.json.
+The file will have its original line endings in your working directory
+    Successfully initialized git.
+PS C:\dev\github\bchirgwin> cd .\d3-demos\
+PS C:\dev\github\bchirgwin\d3-demos> cd ..
+PS C:\dev\github\bchirgwin> cd .\demo1\
+PS C:\dev\github\bchirgwin\demo1> ls
+
+
+    Directory: C:\dev\github\bchirgwin\demo1
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        4/17/2019  10:05 PM                e2e
+d-----        4/17/2019  10:06 PM                node_modules
+d-----        4/17/2019  10:05 PM                src
+-a----        4/17/2019  10:05 PM            246 .editorconfig
+-a----        4/17/2019  10:05 PM            629 .gitignore
+-a----        4/17/2019  10:05 PM           3433 angular.json
+-a----        4/17/2019  10:05 PM            528 browserslist
+-a----        4/17/2019  10:05 PM           1017 karma.conf.js
+-a----        4/17/2019  10:06 PM         348573 package-lock.json
+-a----        4/17/2019  10:05 PM           1374 package.json
+-a----        4/17/2019  10:05 PM           1030 README.md
+-a----        4/17/2019  10:05 PM            210 tsconfig.app.json
+-a----        4/17/2019  10:05 PM            438 tsconfig.json
+-a----        4/17/2019  10:05 PM            270 tsconfig.spec.json
+-a----        4/17/2019  10:05 PM           1985 tslint.json
+
+
+PS C:\dev\github\bchirgwin\demo1> npm add @angular/elements
+npm WARN codelyzer@5.0.0 requires a peer of @angular/compiler@>=2.3.1 <8.0.0 || >7.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN codelyzer@5.0.0 requires a peer of @angular/core@>=2.3.1 <8.0.0 || >7.0.0-beta <9.0.0 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/elements@7.2.13 requires a peer of @angular/core@7.2.13 but none is installed. You must install peer dependencies yourself.
+npm WARN @angular/elements@7.2.13 requires a peer of @angular/platform-browser@7.2.13 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.8 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.8: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ @angular/elements@7.2.13
+added 1 package from 1 contributor and audited 18969 packages in 5.946s
+found 0 vulnerabilities
+
+PS C:\dev\github\bchirgwin\demo1> ng g component button --inline-style --inline-template -v Native
+>>
+CREATE src/app/button/button.component.spec.ts (628 bytes)
+CREATE src/app/button/button.component.ts (318 bytes)
+UPDATE src/app/app.module.ts (396 bytes)
+PS C:\dev\github\bchirgwin\demo1>
+PS C:\dev\github\bchirgwin\demo1> ng serve
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js attach Source
+Date: 2019-04-18T03:55:58.981Z
+Hash: deec0a78590ae8fba1bc
+Time: 8121ms
+chunk {main} main.js, main.js.map (main) 337 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 594 kB [initial] [rendered]
+chunk {polyfills.es5} polyfills.es5.js, polyfills.es5.js.map (polyfills.es5) 708 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 345 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.31 MB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T03:58:45.683Z - Hash: 0de39c6fdc47245ee14b - Time: 946ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T03:58:54.805Z - Hash: 2672a3f71a65c2cc8380 - Time: 879ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 340 kB [initial] [rendered]
+
+ERROR in ./src/app/button/button.component.ts
+Module build failed (from ./node_modules/@ngtools/webpack/src/index.js):
+Error: ENOENT: no such file or directory, open 'C:\dev\github\bchirgwin\demo1\src\app\button\button.component.ts'
+    at Object.openSync (fs.js:448:3)
+    at Object.readFileSync (fs.js:348:35)
+    at Storage.provideSync (C:\dev\github\bchirgwin\demo1\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:98:13)
+    at CachedInputFileSystem.readFileSync (C:\dev\github\bchirgwin\demo1\node_modules\enhanced-resolve\lib\CachedInputFileSystem.js:259:32)
+    at Observable.rxjs_1.Observable.obs [as _subscribe] (C:\dev\github\bchirgwin\demo1\node_modules\@ngtools\webpack\src\webpack-input-host.js:35:51)
+    at Observable._trySubscribe (C:\dev\github\bchirgwin\demo1\node_modules\rxjs\internal\Observable.js:44:25)
+    at Observable.subscribe (C:\dev\github\bchirgwin\demo1\node_modules\rxjs\internal\Observable.js:30:22)
+    at SyncDelegateHost._doSyncCall (C:\dev\github\bchirgwin\demo1\node_modules\@angular-devkit\core\src\virtual-fs\host\sync.js:22:20)
+    at SyncDelegateHost.read (C:\dev\github\bchirgwin\demo1\node_modules\@angular-devkit\core\src\virtual-fs\host\sync.js:49:21)
+    at WebpackCompilerHost.readFileBuffer (C:\dev\github\bchirgwin\demo1\node_modules\@ngtools\webpack\src\compiler_host.js:127:44)
+    at VirtualFileSystemDecorator.readFile (C:\dev\github\bchirgwin\demo1\node_modules\@ngtools\webpack\src\virtual_file_system_decorator.js:42:54)
+    at processResource (C:\dev\github\bchirgwin\demo1\node_modules\loader-runner\lib\LoaderRunner.js:202:11)
+    at iteratePitchingLoaders (C:\dev\github\bchirgwin\demo1\node_modules\loader-runner\lib\LoaderRunner.js:158:10)
+    at iteratePitchingLoaders (C:\dev\github\bchirgwin\demo1\node_modules\loader-runner\lib\LoaderRunner.js:165:10)
+    at C:\dev\github\bchirgwin\demo1\node_modules\loader-runner\lib\LoaderRunner.js:176:18
+    at loadLoader (C:\dev\github\bchirgwin\demo1\node_modules\loader-runner\lib\loadLoader.js:47:3)
+i ｢wdm｣: Failed to compile.
+
+    ERROR in src/app/app.module.ts(5,33): error TS2307: Cannot find module './button/button.component'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T03:59:18.854Z - Hash: deec0a78590ae8fba1bc - Time: 494ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 337 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:00:16.677Z - Hash: e1056fe03947625f5a90 - Time: 845ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:08:12.294Z - Hash: e2c49d5a1c122412ffc2 - Time: 364ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 340 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:08:38.987Z - Hash: 87920875c87a738e7e67 - Time: 638ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 338 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:09:10.587Z - Hash: 34f57ea459d007385b72 - Time: 308ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 338 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:11:21.617Z - Hash: a03a33665a52ec7bb6c1 - Time: 401ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: wait until bundle finished: /
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:15:10.294Z - Hash: cdd9e29b60efaf557825 - Time: 352ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:16:27.353Z - Hash: 5be003961e3549311509 - Time: 350ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:16:49.476Z - Hash: 40ae98fcdec7b0eb3a6a - Time: 321ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:18:08.107Z - Hash: 40ae98fcdec7b0eb3a6a - Time: 312ms
+6 unchanged chunks
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:18:39.765Z - Hash: 40ae98fcdec7b0eb3a6a - Time: 938ms
+6 unchanged chunks
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:18:45.171Z - Hash: 40ae98fcdec7b0eb3a6a - Time: 251ms
+6 unchanged chunks
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,3): error TS2390: Constructor implementation is missing.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:18:51.085Z - Hash: 40ae98fcdec7b0eb3a6a - Time: 313ms
+6 unchanged chunks
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,3): error TS2390: Constructor implementation is missing.
+    src/app/app.module.ts(23,15): error TS2369: A parameter property is only allowed in a constructor implementation.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:19:01.069Z - Hash: ad8e9e0a982f8680a52d - Time: 427ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:19:09.246Z - Hash: ad8e9e0a982f8680a52d - Time: 474ms
+6 unchanged chunks
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:19:16.190Z - Hash: c3577d30920f30b23450 - Time: 349ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:19:20.921Z - Hash: 7907448f173b8f281338 - Time: 224ms
+6 unchanged chunks
+
+ERROR in src/app/app.module.ts(28,3): error TS1109: Expression expected.
+
+i ｢wdm｣: Failed to compile.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:19:27.866Z - Hash: b5a65144f54687c2214b - Time: 279ms
+6 unchanged chunks
+
+ERROR in src/app/app.module.ts(26,37): error TS1109: Expression expected.
+
+i ｢wdm｣: Failed to compile.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour 95% emitting CopyPlugin
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+    src/app/app.module.ts(26,16): error TS2554: Expected 2 arguments, but got 0.
+
+
+Date: 2019-04-18T04:19:32.565Z - Hash: 871ce5a75e7fa79f1c2f - Time: 1187ms
+4 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.34 MB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:20:47.435Z - Hash: a300083bb4db8f966614 - Time: 401ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+    src/app/app.module.ts(26,16): error TS2554: Expected 2 arguments, but got 1.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:20:59.911Z - Hash: ef6d7b56e2cf7929dd38 - Time: 355ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:21:12.057Z - Hash: 694eac6893937c9fb1df - Time: 226ms
+6 unchanged chunks
+
+ERROR in src/app/app.module.ts(26,59): error TS1005: ',' expected.
+
+i ｢wdm｣: Failed to compile.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+    src/app/app.module.ts(26,51): error TS2663: Cannot find name 'injector'. Did you mean the instance member 'this.injector'?
+    src/app/app.module.ts(26,61): error TS2554: Expected 2 arguments, but got 3.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:21:23.112Z - Hash: caf8d05623223ec6a7b0 - Time: 328ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:21:28.732Z - Hash: e02a840ada7c4a10421d - Time: 345ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:21:44.068Z - Hash: ea5a9196325e6f4ac49f - Time: 378ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+
+    ERROR in src/app/app.module.ts(23,34): error TS2304: Cannot find name 'Injector'.
+
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:22:10.167Z - Hash: 3df26bb8cf7673b69da6 - Time: 369ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:25:36.915Z - Hash: 3866c0e77d210d58c3ab - Time: 373ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:26:01.775Z - Hash: a62eee89a4c52c13d196 - Time: 294ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:26:46.017Z - Hash: 627d5716bae1dae998b2 - Time: 404ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:26:56.248Z - Hash: a62eee89a4c52c13d196 - Time: 350ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:28:38.850Z - Hash: a26213e829147103214a - Time: 401ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+i ｢wdm｣: Compiling...
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour
+Date: 2019-04-18T04:32:26.554Z - Hash: 5c7f53d36270af7fa29c - Time: 389ms
+5 unchanged chunks
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+^CTerminate batch job (Y/N)? y
+PS C:\dev\github\bchirgwin\demo1> ng serve
+** Angular Live Development Server is listening on localhost:4200, open your browser on http://localhost:4200/ **
+ 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.js generate SourceMa 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js generate Sour 93% after chunk asset optimization SourceMapDevToolPlugin polyfills.es5.js attach Source
+Date: 2019-04-18T04:33:09.566Z
+Hash: 5c7f53d36270af7fa29c
+Time: 9277ms
+chunk {main} main.js, main.js.map (main) 339 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 594 kB [initial] [rendered]
+chunk {polyfills.es5} polyfills.es5.js, polyfills.es5.js.map (polyfills.es5) 708 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.08 kB [entry] [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 345 kB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 3.34 MB [initial] [rendered]
+i ｢wdm｣: Compiled successfully.
+^CTerminate batch job (Y/N)?
+^C
+PS C:\dev\github\bchirgwin\demo1> cd ..
+PS C:\dev\github\bchirgwin> git status
+fatal: not a git repository (or any of the parent directories): .git
+PS C:\dev\github\bchirgwin> ls
+
+
+    Directory: C:\dev\github\bchirgwin
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       12/16/2018   7:03 PM                bchirgwin.github.io
+d-----        3/14/2019   7:02 PM                codewars-jest-testing
+da----       12/16/2018   6:52 PM                d3-demos
+d-----        4/17/2019  11:23 PM                demo1
+d-----        4/14/2019   8:45 PM                dev-book
+da----         4/6/2019  12:07 PM                diagrams
+d-----       12/16/2018   6:52 PM                docker
+d-----        4/18/2019   5:44 PM                eula
+da----         3/2/2019  11:08 AM                primeng
+
+
+PS C:\dev\github\bchirgwin> git clone https://github.com/bchirgwin/recipies.git
+Cloning into 'recipies'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), done.
+PS C:\dev\github\bchirgwin> cd .\recipies\
+PS C:\dev\github\bchirgwin\recipies>
+PS C:\dev\github\bchirgwin\recipies>
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> ls
+
+
+    Directory: C:\dev\github\bchirgwin\recipies
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/18/2019   6:15 PM            975 .gitignore
+-a----        4/18/2019   6:15 PM             10 README.md
+
+
+PS C:\dev\github\bchirgwin\recipies> git checkout -b development
+Switched to a new branch 'development'
+PS C:\dev\github\bchirgwin\recipies> ls
+
+
+    Directory: C:\dev\github\bchirgwin\recipies
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/18/2019   6:15 PM            975 .gitignore
+-a----        4/18/2019   6:15 PM             10 README.md
+
+
+PS C:\dev\github\bchirgwin\recipies> ls -al
+Get-ChildItem : A parameter cannot be found that matches parameter name 'al'.
+At line:1 char:4
++ ls -al
++    ~~~
+    + CategoryInfo          : InvalidArgument: (:) [Get-ChildItem], ParameterBindingExc
+   eption
+    + FullyQualifiedErrorId : NamedParameterNotFound,Microsoft.PowerShell.Commands.GetC
+   hildItemCommand
+
+PS C:\dev\github\bchirgwin\recipies> dir
+
+
+    Directory: C:\dev\github\bchirgwin\recipies
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----        4/18/2019   6:15 PM            975 .gitignore
+-a----        4/18/2019   6:15 PM             10 README.md
+
+
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch development
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> git branch
+* development
+  master
+PS C:\dev\github\bchirgwin\recipies> git help
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+PS C:\dev\github\bchirgwin\recipies> git help status
+PS C:\dev\github\bchirgwin\recipies> git commit --help
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch development
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> git branch
+* development
+  master
+PS C:\dev\github\bchirgwin\recipies> git checkout -b btc-veggie-burger
+Switched to a new branch 'btc-veggie-burger'
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        veggie-burger.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        veggie-burger.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        veggie-burger.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        veggie-burger.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\dev\github\bchirgwin\recipies> git add .
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   .gitignore
+        new file:   veggie-burger.md
+
+PS C:\dev\github\bchirgwin\recipies> git commit -m "(WIP) veggie receipe"
+[btc-veggie-burger 1750cfe] (WIP) veggie receipe
+ 2 files changed, 13 insertions(+)
+ create mode 100644 veggie-burger.md
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-veggie-burger
+nothing to commit, working tree clean
+PS C:\dev\github\bchirgwin\recipies> git checkout development
+Switched to branch 'development'
+PS C:\dev\github\bchirgwin\recipies> ls
+
+
+    Directory: C:\dev\github\bchirgwin\recipies
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        4/18/2019   6:41 PM                .idea
+-a----        4/18/2019   6:44 PM            975 .gitignore
+-a----        4/18/2019   6:15 PM             10 README.md
+
+
+PS C:\dev\github\bchirgwin\recipies> git checkout -b btc-cheesecake
+Switched to a new branch 'btc-cheesecake'
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-cheesecake
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .idea/misc.xml
+        new file:   .idea/modules.xml
+        new file:   .idea/recipies.iml
+        new file:   .idea/vcs.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/workspace.xml
+        cheesecake.md
+
+PS C:\dev\github\bchirgwin\recipies> git reset HEAD
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-cheesecake
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        cheesecake.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-cheesecake
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+        cheesecake.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\dev\github\bchirgwin\recipies> git add .\cheesecake.md
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-cheesecake
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   cheesecake.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+
+PS C:\dev\github\bchirgwin\recipies> git commit -m "amazing cheesecake dessert"
+[btc-cheesecake 0a49953] amazing cheesecake dessert
+ 1 file changed, 5 insertions(+)
+ create mode 100644 cheesecake.md
+PS C:\dev\github\bchirgwin\recipies> git status
+On branch btc-cheesecake
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .idea/
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\dev\github\bchirgwin\recipies> git branch
+* btc-cheesecake
+  btc-veggie-burger
+  development
+  master
+PS C:\dev\github\bchirgwin\recipies> git development
+git: 'development' is not a git command. See 'git --help'.
+PS C:\dev\github\bchirgwin\recipies> git checkout development
+Switched to branch 'development'
+PS C:\dev\github\bchirgwin\recipies> git checkout
+PS C:\dev\github\bchirgwin\recipies> git branch
+  btc-cheesecake
+  btc-veggie-burger
+* development
+  master
+PS C:\dev\github\bchirgwin\recipies> git push origin development
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'development' on GitHub by visiting:
+remote:      https://github.com/bchirgwin/recipies/pull/new/development
+remote:
+To https://github.com/bchirgwin/recipies.git
+ * [new branch]      development -> development
+PS C:\dev\github\bchirgwin\recipies>
