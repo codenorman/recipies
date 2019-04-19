@@ -1,7 +1,7 @@
 # Veggie Burger
 
 ## Ingredients
-- Impossible burger
+- Beyond meat burger
 - roll
 - tomato
 - cheese
